@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Simple Grammar Checker",
+  "version": "1.0",
+  "description": "Detect grammar and spelling mistakes in text fields.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://api.languagetool.org/*"],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

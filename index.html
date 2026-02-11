@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grammar Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 15px;
+      width: 250px;
+      margin: 0;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    h2 {
+      margin: 0 0 15px 0;
+      color: #333;
+    }
+
+    button {
+      padding: 8px 12px;
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .status {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Grammar Checker</h2>
+  <button id="toggleBtn">Enabled</button>
+  <div class="status">Runs automatically on text fields</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
